@@ -296,13 +296,13 @@ Widget _buildWebViewX2() {
       buildSpace(direction: Axis.vertical, flex: false, amount: 20.0),
       createButton(
         text:
-            'https://v3.thestocks.im/',
+            '1',
         onTap: _setUrl,
       ),
       buildSpace(direction: Axis.vertical, flex: false, amount: 20.0),
       createButton(
         text:
-            'https://unsplash.com',
+            '2',
         onTap: _setUrlBypass,
       ),
     ];
