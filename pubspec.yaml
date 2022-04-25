@@ -10,10 +10,10 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.3
+  webviewx: ^0.2.0
+
   flutter:
     sdk: flutter
-
- webviewx: ^0.2.1
 
 dev_dependencies:
   flutter_test:
