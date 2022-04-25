@@ -79,10 +79,10 @@ class _WebViewXPageState extends State<WebViewXPage> {
   Widget _buildWebViewX() {
     return WebViewX(
       key: const ValueKey('webviewx'),
-      initialContent: initialContent,
-      initialSourceType: SourceType.html,
+      initialContent: 'https://istockphoto.com',
+      initialSourceType: SourceType.url,
       height: screenSize.height / 1.2,
-      width: min(screenSize.width * 1, 430),
+      width: min(screenSize.width * 1, 450),
       onWebViewCreated: (controller) => webviewController = controller,
       onPageStarted: (src) =>
           debugPrint('A new page has started loading: $src\n'),
@@ -120,8 +120,8 @@ class _WebViewXPageState extends State<WebViewXPage> {
 Widget _buildWebViewX2() {
     return WebViewX(
       key: const ValueKey('webviewx2'),
-      initialContent: initialContent,
-      initialSourceType: SourceType.html,
+      initialContent: 'https://unsplash.com/',
+      initialSourceType: SourceType.url,
       height: screenSize.height / 1.2,
       width: min(screenSize.width * 1, 950),
       onWebViewCreated: (controller) => webviewController2 = controller,
