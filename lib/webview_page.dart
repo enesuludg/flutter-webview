@@ -81,8 +81,8 @@ class _WebViewXPageState extends State<WebViewXPage> {
       key: const ValueKey('webviewx'),
       initialContent: initialContent,
       initialSourceType: SourceType.html,
-      height: screenSize.height / 1.1,
-      width: min(screenSize.width * 1, 420),
+      height: screenSize.height / 1.2,
+      width: min(screenSize.width * 1, 430),
       onWebViewCreated: (controller) => webviewController = controller,
       onPageStarted: (src) =>
           debugPrint('A new page has started loading: $src\n'),
@@ -122,7 +122,7 @@ Widget _buildWebViewX2() {
       key: const ValueKey('webviewx2'),
       initialContent: initialContent,
       initialSourceType: SourceType.html,
-      height: screenSize.height / 1.1,
+      height: screenSize.height / 1.2,
       width: min(screenSize.width * 1, 950),
       onWebViewCreated: (controller) => webviewController2 = controller,
       onPageStarted: (src) =>
@@ -221,7 +221,6 @@ Widget _buildWebViewX2() {
     webviewController.setIgnoreAllGestures(!ignoring);
     showSnackBar('Ignore events = ${!ignoring}', context);
   }
-
   Future<void> _evalRawJsInGlobalContext() async {
     try {
       final result = await webviewController.evalRawJavascript(
@@ -236,6 +235,7 @@ Widget _buildWebViewX2() {
       );
     }
   }
+
 
   Future<void> _callPlatformIndependentJsMethod() async {
     try {
