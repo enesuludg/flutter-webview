@@ -15,7 +15,6 @@ class WebViewXPage extends StatefulWidget {
 class _WebViewXPageState extends State<WebViewXPage> {
   late WebViewXController webviewController;
   late WebViewXController webviewController2;
-
   final initialContent =
       '<h4> This is some hardcoded HTML code embedded inside the webview <h4> <h2> Hello world! <h2>';
   final executeJsErrorMessage =
@@ -161,7 +160,7 @@ Widget _buildWebViewX2() {
   }
   void _setUrl() {
     webviewController.loadContent(
-      'https://v3.thestocks.im/',
+      'https://unsplash.com/',
       SourceType.url,
     );
     webviewController2.loadContent(
@@ -175,7 +174,7 @@ Widget _buildWebViewX2() {
       SourceType.urlBypass,
     );
     webviewController2.loadContent(
-      'https://v3.thestocks.im/',
+      'https://unsplash.com/',
       SourceType.url,
     );
   }
